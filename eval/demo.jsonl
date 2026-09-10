@@ -1,0 +1,10 @@
+{"id": 1, "question": "What was Demo Bank's profit after tax in 2024?", "reference": "PKR 42.5 billion, up 18% from PKR 36.0 billion in 2023.", "sources": ["demo_bank_annual_report_2024"]}
+{"id": 2, "question": "What final cash dividend did Demo Bank's board recommend for 2024?", "reference": "A final cash dividend of PKR 6.00 per share, taking the total for the year to PKR 14.00 per share.", "sources": ["demo_bank_annual_report_2024"]}
+{"id": 3, "question": "What was Demo Bank's capital adequacy ratio in 2024?", "reference": "17.8% (16.9% in 2023).", "sources": ["demo_bank_annual_report_2024"]}
+{"id": 4, "question": "How much in fully provisioned loss-category loans did Demo Bank charge off in 2024?", "reference": "PKR 3.2 billion; recovery rights remain intact.", "sources": ["demo_bank_annual_report_2024"]}
+{"id": 5, "question": "How many subscribers did Demo Telecom have at the end of 2024 and how many were on 4G?", "reference": "47.2 million subscribers, of whom 31.5 million were 4G users.", "sources": ["demo_telecom_annual_report_2024"]}
+{"id": 6, "question": "What was Demo Telecom's EBITDA margin in 2024?", "reference": "48%.", "sources": ["demo_telecom_annual_report_2024"]}
+{"id": 7, "question": "What was the 30-day delinquency rate on loans disbursed through Demo Telecom's mobile wallet?", "reference": "3.1%, on PKR 68 billion of loans disbursed.", "sources": ["demo_telecom_annual_report_2024"]}
+{"id": 8, "question": "What minimum CCTV resolution does the Demo Regulator circular require?", "reference": "At least 5 megapixels at ATM vestibules, branch entrances and cash counters.", "sources": ["demo_regulator_circular_01_2024"]}
+{"id": 9, "question": "By when must Tier-1 city branches comply with the Demo Regulator CCTV circular?", "reference": "By 31 March 2025 (all other branches by 31 December 2025).", "sources": ["demo_regulator_circular_01_2024"]}
+{"id": 10, "question": "For how long must CCTV video records be preserved under the Demo Regulator circular?", "reference": "A minimum of 90 days.", "sources": ["demo_regulator_circular_01_2024"]}

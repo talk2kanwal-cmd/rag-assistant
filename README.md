@@ -105,6 +105,35 @@ python scripts/ask.py "What is the regulatory retail portfolio limit?"   # or CL
 > Fully offline instead of Groq? Install [Ollama](https://ollama.com), run
 > `ollama pull llama3.1:8b`, and set `LLM_PROVIDER=ollama` in `.env`.
 
+## Deploy to Streamlit Community Cloud
+
+This project is ready for deployment as a Streamlit app.
+
+1. Push the repository to GitHub.
+2. Go to [Streamlit Community Cloud](https://share.streamlit.io/).
+3. Create a new app and select this repository.
+4. Set the app file to `app.py`.
+5. Add these secrets under app settings:
+
+```env
+LLM_PROVIDER=groq
+GROQ_API_KEY=your_groq_key_here
+GROQ_MODEL=openai/gpt-oss-20b
+JUDGE_MODEL=openai/gpt-oss-20b
+EMBEDDING_BACKEND=bge
+EMBEDDING_MODEL=BAAI/bge-small-en-v1.5
+CHUNK_SIZE=900
+CHUNK_OVERLAP=150
+TOP_K=5
+HYBRID=true
+DENSE_K=12
+BM25_K=12
+```
+
+6. Deploy the app.
+
+The app is designed to work with local document ingestion from the UI or via the CLI scripts. For a public deployment, keep the API key in Streamlit secrets and do not commit `.env` files.
+
 ## Evaluation
 
 `eval/sbp_bprd_2024.jsonl` holds **30 questions** written against the 2024 BPRD
@@ -195,16 +224,6 @@ This is the generation-side check you want when asking: *Was the answer right?*
 
 This is the part that makes the project look professional in a report or interview: compare a small matrix of retrieval settings, then show a compact table with the headline metrics.
 
-Suggested experiment grid:
-
-| Config | Hit rate@5 | MRR | Answer accuracy | Faithfulness |
-|---|---:|---:|---:|---:|
-| Current baseline (chunk 900, hybrid BM25 + vector) | 100.0% | 0.983 | 100.0% | Not run |
-| Vector-only retrieval | TBD | TBD | TBD | TBD |
-| BM25-only retrieval | TBD | TBD | TBD | TBD |
-| Chunk 500 + hybrid | TBD | TBD | TBD | TBD |
-| Chunk 1200 + hybrid | TBD | TBD | TBD | TBD |
-| + reranker | TBD | TBD | TBD | TBD |
 
 Recommended ablations to run in order:
 
